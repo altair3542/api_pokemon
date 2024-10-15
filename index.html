@@ -3,9 +3,35 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
   <title>Poke dex by Censa</title>
 </head>
 <body>
-  <h1>Estamos en construcción, volveremos luego.</h1>
+  <div class="pokedex">
+    <div class="pokedex-screen">
+      <div class="pokedex-search">
+        <input type="text" id="search" placeholder="Busca un pokémon... ">
+        <button id="search-btn">Buscar...</button>
+      </div>
+      <div class="details" id="pokemon-details">
+        <h2 id="pokemon-name"></h2>
+        <img src="" alt="Pokemon" id="pokemon-image">
+        <p id="pokemon-info"></p>
+        <audio id="pokemon-sound" controls style="display: none;"></audio>
+        <div class="slider-container">
+          <div class="slider" id="sprites-container"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="lightbox" id="lightbox">
+    <span class="close">&times;</span>
+    <img src="" alt="" class="lightbox-content" id="lightbox-img">
+    <a class="prev" id="prev">&lt</a>
+    <a class="prev" id="prev">&gt</a>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
